@@ -4,3 +4,6 @@
 [submodule "ALU"]
 	path = ALU
 	url = https://github.com/swcompetition/ALU
+[submodule "Data_Memory"]
+	path = Data_Memory
+	url = https://github.com/swcompetition/Data_Memory
