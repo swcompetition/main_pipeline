@@ -1,0 +1,6 @@
+[submodule "Register"]
+	path = Register
+	url = https://github.com/swcompetition/Register
+[submodule "ALU"]
+	path = ALU
+	url = https://github.com/swcompetition/ALU
