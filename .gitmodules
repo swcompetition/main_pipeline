@@ -7,3 +7,6 @@
 [submodule "Data_Memory"]
 	path = Data_Memory
 	url = https://github.com/swcompetition/Data_Memory
+[submodule "Insturction_Memory"]
+	path = Insturction_Memory
+	url = https://github.com/swcompetition/Insturction_Memory
