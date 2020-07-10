@@ -12,6 +12,7 @@ OBJS=Data_Memory/DMem.o \
 	Register/RMem.o \
 	mpipe_src/MainExecuter.o \
 	ALU/ALU.o \
+	main.o\
 	
 %.o: %.cpp
 	$(CC) $(CFLAGS) -c $< -o $@
