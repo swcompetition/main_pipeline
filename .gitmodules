@@ -10,3 +10,6 @@
 [submodule "Insturction_Memory"]
 	path = Insturction_Memory
 	url = https://github.com/swcompetition/Insturction_Memory
+[submodule "Instruction_Memory"]
+	path = Instruction_Memory
+	url = https://github.com/swcompetition/Instruction_Memory
