@@ -4,7 +4,8 @@ TARGET=app.out
 INCLUDE_PATH=Data_Memory\
 	Instruction_Memory\
 	Register\
-	ALU
+	ALU\
+	mpipe_src
 INC_PARAMS=$(foreach d, $(INCLUDE_PATH), -I$d)
 OBJS=Data_Memory/DMem.o \
 	Insturction_Memory/Instruction_Memory.o \
