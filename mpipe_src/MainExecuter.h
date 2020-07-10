@@ -19,13 +19,19 @@ public:
         }
         // Parse from I-Mem
         imem_unit.seperate(to_execute);
-        register_unit.initRegister(regmem_unit, imem_unit.get_rs(), imem_unit.get_rt(), imem_unit.get_rd());
-        alu_unit.ALU_operation(register_unit.get_rs_forward(), register_unit.get_rt_forward());
-        bool* tmp = alu_unit.get_ALU_result();
 
-        for (int i = 0; i < 32; i++) {
-            cout << tmp[i];
-        }
-        cout << endl;
+        // Register Unit(Parse, Forward)
+        register_unit.initRegister(regmem_unit, imem_unit.get_rs(), imem_unit.get_rt(), imem_unit.get_rd());
+
+        // ALU Operation
+        alu_unit.ALU_operation(register_unit.get_rs_forward(), register_unit.get_rt_forward());
+
+        // DMem needed
+
+        // Write-Back(Write to RD)
+        register_unit.setRDValue(alu_unit.get_ALU_result());
+
+        // Check output
+        cout << register_unit.getRDValue() << endl;
     }
 };
