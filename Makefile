@@ -7,7 +7,6 @@ INCLUDE_PATH=Data_Memory\
 	ALU
 INC_PARAMS=$(foreach d, $(INCLUDE_PATH), -I$d)
 OBJS=Data_Memory/DMem.o \
-	Insturction_Memory/test.o \
 	Insturction_Memory/Instruction_Memory.o \
 	Register/Register.o \
 	Register/RMem.o \
