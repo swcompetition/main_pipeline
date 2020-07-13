@@ -1,13 +1,16 @@
 CC=g++-10.1
+INC_PARAMS=$(foreach d, $(INCLUDE_PATH), -I$d)
 CFLAGS=-Wall -O3 $(INC_PARAMS)
 TARGET=app.out
 INCLUDE_PATH=Data_Memory\
 	Instruction_Memory\
 	Register\
 	ALU\
-	mpipe_src
-INC_PARAMS=$(foreach d, $(INCLUDE_PATH), -I$d)
-OBJS=Data_Memory/DMem.o \
+	mpipe_src\
+	Control\
+
+OBJS=Control/Control.o \
+	Data_Memory/DMem.o \
 	Instruction_Memory/Instruction_Memory.o \
 	Register/Register.o \
 	Register/RMem.o \
