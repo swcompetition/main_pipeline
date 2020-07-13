@@ -13,3 +13,6 @@
 [submodule "Instruction_Memory"]
 	path = Instruction_Memory
 	url = https://github.com/swcompetition/Instruction_Memory
+[submodule "Control"]
+	path = Control
+	url = https://github.com/swcompetition/Control
