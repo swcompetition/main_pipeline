@@ -1,4 +1,4 @@
-CC=g++-10.1
+CC=g++-10
 INC_PARAMS=$(foreach d, $(INCLUDE_PATH), -I$d)
 CFLAGS=-Wall -O3 $(INC_PARAMS)
 TARGET=app.out
