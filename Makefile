@@ -8,6 +8,7 @@ INCLUDE_PATH=Data_Memory\
 	ALU\
 	mpipe_src\
 	Control\
+	ALU_control\
 
 OBJS=Control/Control.o \
 	Data_Memory/DMem.o \
@@ -16,6 +17,7 @@ OBJS=Control/Control.o \
 	Register/RMem.o \
 	mpipe_src/MainExecuter.o \
 	ALU/ALU.o \
+	ALU_control/ALU_control.cpp\
 	main.o\
 	
 %.o: %.cpp

@@ -16,3 +16,6 @@
 [submodule "Control"]
 	path = Control
 	url = https://github.com/swcompetition/Control
+[submodule "ALU_control"]
+	path = ALU_control
+	url = https://github.com/swcompetition/ALU_control

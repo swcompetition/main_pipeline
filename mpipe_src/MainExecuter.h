@@ -4,6 +4,7 @@
 #include "Register.h"
 #include "DMem.h"
 #include "Control.h"
+#include "ALU_control.h"
 
 class MainExecuter {
 private:
@@ -14,9 +15,10 @@ private:
     RMem regmem_unit;
     Register register_unit;
     DMem datamem_unit;
-    string to_execute = "00000011101000101001100100100101";
+    ALU_control alu_control;
+    string to_execute = "00000011101000101000000010000000";
 public:
-    MainExecuter() : ctr(opcode), register_unit(&ctr) {
+    MainExecuter() {
     }
     // For now, assuming opcode is 000000
     void init();
