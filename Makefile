@@ -1,6 +1,6 @@
-CC=g++-10
+CC=g++
 INC_PARAMS=$(foreach d, $(INCLUDE_PATH), -I$d)
-CFLAGS=-Wall -O3 $(INC_PARAMS)
+CFLAGS=-Wall -O3 $(INC_PARAMS) -g -std=c++2a
 TARGET=app.out
 INCLUDE_PATH=Data_Memory\
 	Instruction_Memory\

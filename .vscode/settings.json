@@ -2,6 +2,7 @@
     "files.associations": {
         "type_traits": "cpp",
         "iosfwd": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "map": "cpp"
     }
 }
