@@ -23,6 +23,7 @@
     <ClCompile Include="ALU_control\ALU_control.cpp" />
     <ClCompile Include="Control\Control.cpp" />
     <ClCompile Include="Data_Memory\DMem.cpp" />
+    <ClCompile Include="File_Read.cpp" />
     <ClCompile Include="Instruction_Memory\Instruction_Memory.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mpipe_src\MainExecuter.cpp" />
@@ -34,6 +35,7 @@
     <ClInclude Include="ALU_control\ALU_control.h" />
     <ClInclude Include="Control\Control.h" />
     <ClInclude Include="Data_Memory\DMem.h" />
+    <ClInclude Include="File_Read.h" />
     <ClInclude Include="Instruction_Memory\Instruction_Memory.h" />
     <ClInclude Include="mpipe_src\MainExecuter.h" />
     <ClInclude Include="Register\Register.h" />

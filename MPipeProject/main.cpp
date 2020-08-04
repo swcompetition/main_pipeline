@@ -1,8 +1,9 @@
 #include <iostream>
-#include "MainExecuter.h"
+#include "File_Read.h"
 
 int main(void) {
-    MainExecuter me;
-    me.init();
+    File_Read me;
+    me.file_read();
+    
     return 0;
 }

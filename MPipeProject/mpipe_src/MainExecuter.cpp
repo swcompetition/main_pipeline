@@ -1,6 +1,6 @@
 #include "MainExecuter.h"
 
-void MainExecuter::init() {
+void MainExecuter::init(string temp) {
     int rs_idx = 17;
     int rt_idx = 2;
     regmem_unit.set_actual_dec(rs_idx, 100);
@@ -9,7 +9,7 @@ void MainExecuter::init() {
     //     regmem_unit.set_actual_dec(i, t_val);
     // }
     // Parse from I-Mem
-    imem_unit.seperate(to_execute);
+    imem_unit.seperate(temp);
 
     // Init Control Signal
     ctr.init(imem_unit.get_op(), imem_unit.get_shamt(), imem_unit.get_ff());
